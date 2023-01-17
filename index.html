@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Economia Intertemporal: a microeconomia por trás da macro</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Vítor Wilher Cientista-Chefe da Análise Macro " />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#282f6b"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="libs/mark.js/mark.min.js"></script>
+    <link href="libs/xaringanExtra-search/search.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-search/search.js"></script>
+    <script>window.addEventListener('load', function() { window.xeSearch = new RemarkSearch({"position":"bottom-left","caseSensitive":false,"showIcon":true,"autoSearch":true}) })</script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copiar","success":"Copiado!","error":"Pressione Ctrl+C para copiar"})</script>
+    <script src="libs/xaringanExtra-progressBar/progress-bar.js"></script>
+    <link href="libs/xaringanExtra-extra-styles/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Economia Intertemporal: a microeconomia por trás da macro
+]
+.subtitle[
+## Macroeconomia para Investimentos
+]
+.author[
+### Vítor Wilher<br><span style = "font-size: 70%;">Cientista-Chefe da Análise Macro<br>
+]
+
+---
+
+
+
+
+
+
+
+&lt;style type="text/css"&gt;
+pre {
+  white-space: pre-wrap;
+  overflow-y: scroll !important;
+  max-height: 45vh !important;
+  overflow-x: auto;
+  max-width: 100%;
+}
+.tiny55 .remark-code {
+  font-size: 55%; !important;
+}
+&lt;/style&gt;
+
+
+
+### Temas de hoje
+
+- Consumo conforme Keynes&lt;br&gt;&lt;br&gt;
+- Escolha intertemporal de Fisher&lt;br&gt;&lt;br&gt;
+- Extensões&lt;br&gt;&lt;br&gt;
+  - Teoria do ciclo de vida de Modigliani&lt;br&gt;&lt;br&gt;
+  - Hipótese de renda permanente de Friedman&lt;br&gt;&lt;br&gt;
+  - Hipótese de passeio aleatório de Hall&lt;br&gt;&lt;br&gt;
+  - Gratificação instantânea de Laibson
+
+
+---
+### Introdução
+
+
+
+
+.pull-left[
+
+Nesta aula iremos abordar uma intersecção entre a micro e a macro no que se trata da teoria do consumo das famílias, explicada por 2 visões de economistas proeminentes.
+
+- **Motivação**: de que forma as famílias decidem sobre o quanto de sua renda devem consumir  hoje e quanto devem poupar para o futuro?
+
+Essa é uma questão microeconômica, mas que possui implicações macroeconômicas. No modelo de Solow vimos que a taxa de poupança é determinante para o estado estacionário, ou seja, é crucial para analisar o longo prazo. O consumo representa cerca de 81% do PIB, portanto flutuações dessa variável também são importantes em períodos de recessão e expansão.
+
+]
+
+.pull-right[
+
+&lt;img src="index_files/figure-html/unnamed-chunk-4-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+Tomaremos como referência Mankiw (2010) ao longo desta aula, em especial o capítulo 17 que detalha extensões dos modelos (não abordaremos aqui).
+
+
+
+---
+### Consumo conforme Keynes
+
+Keynes (1936) fez da função de consumo um elemento central de sua teoria de flutuações econômicas. O autor parte de 3 premissas básicas:
+
+1. A **propensão marginal a consumir (PMgC)&lt;sup&gt;1&lt;/sup&gt;** se situa entre 0 e 1 &amp;rarr; quando você ganha R$ 1 adicional, você gasta uma parte e guarda o restante;
+2. A **propensão média a consumir (PMC)&lt;sup&gt;2&lt;/sup&gt;** diminui conforme a renda aumenta &amp;rarr; poupar é um luxo, ricos poupam mais de sua renda do que pobres;
+3. A **renda é o determinante principal do consumo** &amp;rarr; as taxas de juros não têm um papel importante.
+
+&amp;rarr; Com base nessas premissas, a **função consumo keynesiana** é expressa por:
+
+.pull-left[
+
+`$$C = \overline{C} + cY$$`
+
+]
+
+.pull-right[
+
+onde:
+- `\(C\)` &amp;rarr; é o consumo;
+- `\(\overline{C}\)` &amp;rarr; é uma constante maior do que zero;
+- `\(c\)` &amp;rarr; é a PMgC, valor entre 0 e 1;
+- `\(Y\)` &amp;rarr; é a renda disponível.
+
+]
+
+
+.footnote[
+
+&lt;sup&gt;1&lt;/sup&gt; PMgC é a quantidade consumida a cada unidade de moeda adicional de renda.&lt;br&gt;
+&lt;sup&gt;2&lt;/sup&gt; PMC é a proporção entre o consumo e a renda.
+
+]
+
+
+---
+### Consumo conforme Keynes
+
+Gráficamente:
+
+.pull-left[
+
+A função consumo keynesiana satisfaz as 3 premissas de Keynes pois:
+
+1. `\(c\)` ou PMgC está entre 0 e 1 (é a inclinação da reta);
+2. A PMC é expressa como `\(PMC = \frac{C}{Y} = \frac{\overline{C}}{Y} + c\)`, portanto conforme `\(Y\)` aumenta `\(\frac{\overline{C}}{Y}\)` diminui e a PMC ou `\(\frac{C}{Y}\)` também;
+3. O consumo é determinado pela renda disponível (juros não está incluído).
+
+]
+
+.pull-right[
+
+&lt;img src="index_files/figure-html/unnamed-chunk-5-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+Dados e estudos com séries temporais curtas da época confirmaram as premissas de Keynes, mas não por muito tempo. Após a Segunda Guerra a premissa da PMC não se sustentou (o trabalho do economista Simon Kuznets indicou que a PMC é constante no longo prazo). Em outras palavras, haveria duas funções de consumo: uma de curto e outra de longo prazo. No anos 1950 os trabalhos de Modigliani e Friedman, com base nas contribuições de Fisher, exploraram esses resultados contraditórios, sendo ambos agraciados pelo prêmio Nobel de economia.
+
+
+---
+### Escolha intertemporal de Fisher
+
+A função consumo de Keynes relaciona o consumo corrente com a renda disponível corrente, mas essa relação é incompleta. **Quando pessoas decidem quanto consumir e quanto poupar, elas consideram tanto o presente quanto o futuro**. Em outras palabras, há um *trade-off* entre consumir mais hoje e menos amanhã. Dessa forma, o economista Irving Fisher desenvolveu um modelo que possibilita analisar como consumidores racionais e preocupados com o futuro (*forward-loking*) realizam escolhas intertemporais — ou seja, escolhas que envolvem diferentes períodos no tempo.
+
+**Restrição orçamentária intertemporal**
+
+Restrição orçamentária é um limite do quanto as pessoas podem consumir, restringidas pela sua renda. Quando as pessoas estão decidindo entre quanto consumir hoje e quanto poupar para o futuro, essa restrição se torna intertemporal. Vamos começar a entender o modelo de Fisher analisando essa restrição.
+
+&amp;rarr; Hipóteses simplificadoras:
+
+- O consumidor vive em dois períodos: juventude e velhice;
+- O consumidor possui a renda `\(Y_1\)` e o consumo `\(C_1\)` na juventude e, respectivamente, `\(Y_2\)` e `\(C_2\)` na velhice;
+- As variáveis são em valores reais, ajustadas pela inflação;
+- O consumo pode ser maior ou menor do que a renda em qualquer período, dada a possibilidade de o consumidor contrair empréstimos e poupar;
+- Taxas de juros da poupança e de contrair empréstimos é a mesma.
+
+
+---
+### Escolha intertemporal de Fisher
+
+&amp;rarr; **Como a renda desse consumidor limita o seu consumo nesses dois períodos?**
+
+No primeiro período (juventude), a poupança é igual a renda menos o consumo:
+
+`$$S = Y_1 - C_1$$`
+onde `\(S\)` é a poupança. No segundo período (velhice), o consumo é igual a poupança acumulada, incluindo o juros recebidos sobre essa poupança, mais a renda do segundo período, ou seja:
+
+`$$C_2 = (1 + r)S + Y_2$$`
+onde `\(r\)` é a taxa de juros real. 
+
+Por exemplo, se a taxa de juros real é de 5%, então a cada 1 unidade de moeda (&amp;dollar;) poupada na juventude, o consumidor terá &amp;dollar;1,05 adicionais na velhice. Como não há um terceiro período, o consumidor não poupa nada no segundo período.
+
+A variável `\(S\)` pode representar tanto poupança quanto empréstimo: se o consumo na juventude é menor que a renda na juventude, então `\(S\)` é a poupança, caso contrário o consumidor está contraindo empréstimo e `\(S\)` é o empréstimo.
+
+
+---
+### Escolha intertemporal de Fisher
+
+Para derivar a restrição orçamentária intertemporal inserimos a penúltima equação na última, substituindo `\(S\)`:
+
+`$$C_2 = (1 + r)(Y_1 - C_1) + Y_2$$`
+
+E simplificamos a equação trazendo todos os termos de consumo para o lado esquerdo:
+
+`$$\begin{align}
+(1 + r)C_1 + C_2 &amp; = (1 + r)Y_1 + Y_2, \ \ \text{dividindo por } (1 + r) \text{ obtemos:}\\
+C_1 + \frac{C_2}{(1 + r)} &amp; = Y_1 + \frac{Y_2}{(1 + r)}
+\end{align}$$`
+
+&amp;rarr; Essa equação relaciona o consumo e a renda nos dois períodos, representando a **restrição orçamentária intertemporal**. Como interpretá-la?
+
+- Se a taxa de juros é zero, o consumo total é igual a renda total dos dois períodos;
+- Se a taxa de juros é positiva, o consumo e a renda futuros são **descontados** pelo fator de `\((1 + r)\)`.
+
+Isso implica que a renda futura vale menos do que a renda presente, e que o consumo futuro custa menos do que o consumo presente pelo fator de `\(1/(1 + r)\)`, que é a quantidade de consumo na juventude que o consumidor deve abrir mão para obter 1 unidade de consumo na velhice.
+
+
+---
+### Escolha intertemporal de Fisher
+
+Gráficamente:
+
+.pull-left[
+
+- **Ponto A**: consumidor gasta toda sua renda em consumo em cada período `\((C_1 = Y_1\)` e `\(C_2 = Y_2)\)`;
+- **Ponto B**: consumidor poupa toda sua renda, não consome nada na juventude `\((C_1 = 0)\)`, portanto o consumo na velhice é `\(C_2 = (1 + r)Y_1 + Y_2\)`;
+- **Ponto C**: consumidor gasta além de sua renda em consumo no primeiro período, toma empréstimo para compensar a diferença e não consome nada na velhice `\((C_2 = 0)\)`, portanto o consumo na juventude é `\(C_1 = Y_1 + Y_2/(1 + r)\)`.
+
+]
+
+.pull-right[
+
+&lt;img src="imgs/g1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+
+]
+
+Do ponto A ao B, o consumidor escolhe uma combinação onde consome menos que sua renda na juventude, portanto está poupando o restante para a velhice. Do ponto A ao C, o consumidor escolhe uma combinação onde consome mais que sua renda na juventude, portanto está tomando empréstimo para compensar a diferença.
+
+
+---
+### Escolha intertemporal de Fisher
+
+.pull-left[
+
+**Preferências do consumidor**
+
+A escolha de consumo que o consumidor faz entre os dois períodos é representada pelo que se chama de **curvas de indiferença**, que mostram combinações de consumo no primeiro e segundo período que igualmente satisfazem o consumidor (por isso *indiferença*).
+
+O gráfico ao lado exibe duas curvas de indiferença do consumidor:
+
+]
+
+.pull-right[
+
+&lt;img src="index_files/figure-html/unnamed-chunk-8-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+- O consumidor é indiferente entre as combinações Y, X e W;&lt;br&gt;
+- A inclinação da curva é chamada de **taxa marginal de substituição** (TMgS), que mostra o quanto de `\(C_2\)` o consumidor exige para compensar uma diminuição de 1 unidade de `\(C1\)`, ou seja, é a taxa pela qual o consumidor aceita substituir consumo na juventude por consumo na velhice;&lt;br&gt;
+- Curvas de indiferença maiores `\((CI_2)\)` são, por hipótese, preferíveis, ou seja, o consumidor prefere Z em relação aos pontos Y, X e W.
+
+
+---
+### Escolha intertemporal de Fisher
+
+**Otimização**: se juntarmos a restrição orçamentária intertemporal com as curvas de indiferença do consumidor podemos entender como o consumidor decide sobre quanto consumir em cada período.
+
+.pull-left[
+
+&amp;rarr; O consumidor deseja terminar com a melhor combinação de consumo nos dois períodos (maior curva de indiferença possível);&lt;br&gt;
+&amp;rarr; Entretanto, o consumidor é limitado pela restrição orçamentária intertemporal, de modo que a combinação de consumo deve estar sobre a reta da restrição ou abaixo dela;&lt;br&gt;
+&amp;rarr; O ponto onde a curva e a linha se tocam é o ponto ótimo que traz a melhor combinação de consumo nos dois períodos e que cabe no orçamento do consumidor.
+
+]
+
+.pull-right[
+
+&lt;img src="index_files/figure-html/unnamed-chunk-9-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+Observe que esse **ponto ótimo é a tangência entre as curvas**, ou seja, quando as inclinações são iguais. Portanto, corresponde a quando a TMgS é igual ao fator `\(1 + r\)`:
+
+`$$\text{Ponto ótimo do consumidor } \rightarrow \ TMgS = 1 + r$$`
+
+
+---
+### Resumo e Extensões
+
+- **Keynes** definiu a função consumo tendo como principal determinante a renda disponível, partindo das premissas de que a propensão marginal a consumir se situa entre 0 e 1 e de que a propensão média a consumir diminui conforme a renda aumenta;
+- **Fisher** definiu a função consumo tendo como principal determinante os recursos ao longo da vida do consumidor, dado que o mesmo pode poupar e tomar empréstimos, encara um trade-off intertemporal e escolhe entre consumo presente e futuro para alcançar o maior nível de satisfação.
+
+Extensões sobre essas teorias (e um roteiro de estudos) são descritas abaixo:
+
+&amp;rarr; **Teoria do ciclo de vida de Modigliani**: enfatiza que a renda varia de forma previsível durante a vida de um consumidor e que o mesmo utiliza a poupança e empréstimos para "suavizar" o seu consumo durante a vida. A função consumo, então, depende tanto da renda quando da riqueza;&lt;br&gt;
+&amp;rarr; **Hipótese de renda permanente de Friedman**: enfatiza que as pessoas passam por oscilações permanentes e transitórias na renda. A função consumo, então, depende principalmente da renda permanente e não muito da renda transitória, pois as pessoas podem poupar e tomar empréstimos e desejam suavizar seu consumo;&lt;br&gt;
+&amp;rarr; **Hipótese de passeio aleatório de Hall**: combina a hipótese de Friedman c/ a premissa de que os consumidores possuem expectativas racionais sobre sua renda futura, implicando que mudanças na renda são imprevisíveis;&lt;br&gt;
+&amp;rarr; **Gratificação instantânea de Laibson**: sugere que efeitos psicológicos são importantes p/ entender o comportamento do consumidor, pois as pessoas possuem forte desejo por gratificação imediata, o que as leva a serem inconsistentes ao longo do tempo e pouparem menos do que gostariam.
+
+
+---
+### Referências
+
+Keynes, J. M. (1936). *The General Theory of Employment, Interest and Money*. Palgrave Macmillan. 
+
+Mankiw, N. G. (2010). *Macroeconomics*. Worth Publishers. 
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"navigation": {
+"scroll": false
+}
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
